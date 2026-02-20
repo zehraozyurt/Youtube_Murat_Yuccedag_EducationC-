@@ -4,82 +4,46 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpEğitimKampı
+namespace _2_video
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            #region Printing Commands
-            Console.WriteLine("C# working ");
-            Console.Write("Hello world! ");
-            Console.Write("bottom line");
-            //Console.Read();// Access via console
-            Console.WriteLine("********** Food Categories **********");
-            Console.WriteLine();
-            Console.WriteLine("1-Soups");
-            Console.WriteLine("2-Main Dishes");
-            Console.WriteLine("3_Cold Beginnings");
-            Console.WriteLine("4-Salads");
-            Console.WriteLine("Sweets");
-            Console.WriteLine("Drinks");
-            Console.WriteLine("********** Food Categories **********");
-            #endregion
-
-            #region String Variables
-            string name;
-            name = "Ted";
-            Console.Write(name);
-            string customerName, customerSurname, customerPhone, customerEmail;
-            string district, city;
-
-            customerName = "John";
-            customerSurname = "Smith";
-            customerPhone = "1234567890";
-            customerEmail = "try@gmail.com";
-            district = "Potsdam";
-            city = "Berlin";
-
-            Console.WriteLine("******Reservation Card******");
-            Console.WriteLine();
-            Console.WriteLine("---------------------------------------------");
-            Console.WriteLine("Customer : " + customerName + customerSurname);
-            Console.WriteLine("Communication : " + customerPhone + " " + customerEmail);
-            Console.WriteLine("Address : " + district + "/ " + city);
-            Console.WriteLine("---------------------------------------------");
-            #endregion
-
-            #region Integer Variables
-            Console.WriteLine();
-            Console.WriteLine();
-            int number = 24;
+            #region Double Variables
+            double number;
+            number = 4.85;
             Console.WriteLine(number);
-            Console.WriteLine();
-            Console.WriteLine();
 
-            int hamburgerPrice = 12;
-            int cokePrice = 4;
-            int waterPrice = 2;
-            int friesPrice = 7;
-            int pizzaPrice = 5;
-            int lemonodePrice = 1;
-
-            Console.WriteLine("*****RESTAURANT MENU PRICE******");
+            Console.WriteLine("**********Prince List**********");
             Console.WriteLine();
-            Console.WriteLine("--Hamburger : " + hamburgerPrice + " $");
-            Console.WriteLine("--Pizza : " + pizzaPrice + " $");
-            Console.WriteLine("--Coke : " + cokePrice + " $");
-            Console.WriteLine("--Lemonode : " + lemonodePrice + " $");
-            Console.WriteLine("--Fries : " + friesPrice + " $");
-            Console.WriteLine("--Water : " + waterPrice + " $");
+            double applePrice, orangePrice, strawberryPrice, potatoPrice, tomatoPrice;
+
+            applePrice = 1.485;
+            orangePrice = 2.095;
+            strawberryPrice = 0.405;
+            potatoPrice = 0.95;
+            tomatoPrice = 0.688;
+
+            double appleGram = 1.245;
+            double orangeGram = 2.650;
+            double strawberryGram = 0.750;
+            double potatoGram = 4.859;
+            double tomatoGram = 3.745;
+
+            double appleTotalPrice = applePrice * appleGram;
+            double orangeTotalPrice = orangePrice * orangeGram;
+            double strawberryTotalPrice = strawberryPrice * strawberryGram;
+            double potatoTotalPrice = potatoPrice * potatoGram;
+            double tomatoTotalPrice = tomatoPrice * tomatoGram;
+
+            Console.WriteLine("Received item: Apple " + "     Unit price: " + applePrice + "          Grammage: " + appleGram + "      total amount: " + appleTotalPrice);
+            Console.WriteLine("Received item: Orange " + "    Unit price: " + orangePrice + "          Grammage: " + orangeGram + "       total amount: " + orangeTotalPrice);
+            Console.WriteLine("Received item: Strawberry " + "Unit price: " + strawberryPrice + "          Grammage: " + strawberryGram + "       total amount: " + strawberryTotalPrice);
+            Console.WriteLine("Received item: Potato " + "    Unit price: " + potatoPrice + "           Grammage: " + potatoGram + "      total amount: " + potatoTotalPrice);
+            Console.WriteLine("Received item: Tomato " + "    Unit price: " + tomatoPrice + "          Grammage: " + tomatoGram + "      total amount: " + tomatoTotalPrice);
 
             #endregion
-
-
-            Console.Read();
-
-
-
         }
     }
 }
