@@ -1,0 +1,85 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSharpEğitimKampı
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            #region Printing Commands
+            Console.WriteLine("C# working ");
+            Console.Write("Hello world! ");
+            Console.Write("bottom line");
+            //Console.Read();// Access via console
+            Console.WriteLine("********** Food Categories **********");
+            Console.WriteLine();
+            Console.WriteLine("1-Soups");
+            Console.WriteLine("2-Main Dishes");
+            Console.WriteLine("3_Cold Beginnings");
+            Console.WriteLine("4-Salads");
+            Console.WriteLine("Sweets");
+            Console.WriteLine("Drinks");
+            Console.WriteLine("********** Food Categories **********");
+            #endregion
+
+            #region String Variables
+            string name;
+            name = "Ted";
+            Console.Write(name);
+            string customerName, customerSurname, customerPhone, customerEmail;
+            string district, city;
+
+            customerName = "John";
+            customerSurname = "Smith";
+            customerPhone = "1234567890";
+            customerEmail = "try@gmail.com";
+            district = "Potsdam";
+            city = "Berlin";
+
+            Console.WriteLine("******Reservation Card******");
+            Console.WriteLine();
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine("Customer : " + customerName + customerSurname);
+            Console.WriteLine("Communication : " + customerPhone + " " + customerEmail);
+            Console.WriteLine("Address : " + district + "/ " + city);
+            Console.WriteLine("---------------------------------------------");
+            #endregion
+
+            #region Integer Variables
+            Console.WriteLine();
+            Console.WriteLine();
+            int number = 24;
+            Console.WriteLine(number);
+            Console.WriteLine();
+            Console.WriteLine();
+
+            int hamburgerPrice = 12;
+            int cokePrice = 4;
+            int waterPrice = 2;
+            int friesPrice = 7;
+            int pizzaPrice = 5;
+            int lemonodePrice = 1;
+
+            Console.WriteLine("*****RESTAURANT MENU PRICE******");
+            Console.WriteLine();
+            Console.WriteLine("--Hamburger : " + hamburgerPrice + " $");
+            Console.WriteLine("--Pizza : " + pizzaPrice + " $");
+            Console.WriteLine("--Coke : " + cokePrice + " $");
+            Console.WriteLine("--Lemonode : " + lemonodePrice + " $");
+            Console.WriteLine("--Fries : " + friesPrice + " $");
+            Console.WriteLine("--Water : " + waterPrice + " $");
+
+            #endregion
+
+
+            Console.Read();
+
+
+
+        }
+    }
+}
